@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 844263a6633c64447a43c861b0b315b4, type: 3}
-  m_Name: Boss1HomingAtk
+  m_Name: B2ArmAtk2
   m_EditorClassIdentifier: 
-  typeOfAttack: 1
+  typeOfAttack: 0
   invincibleWhenAttack: 0
-  atkDelayS: 1
-  atkDelayE: 1
+  atkDelayS: 0.5
+  atkDelayE: 0
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
   deleteSelfAfterAtk: 0
@@ -24,24 +24,24 @@ MonoBehaviour:
   pitchMinFX: 0
   pitchMaxFX: 0
   usesAnimation: 1
-  playAnimationBeforeWait: 0
-  facePlayerWhenAnimating: 1
-  idleAtEnd: 1
-  idleAnimation: Idle
-  attackingAnimation: Idle
-  animationParticleEffect: {fileID: 2889957207787137329, guid: cd4665f0f67f5264bb4ef4cc35a9ae9b, type: 3}
+  playAnimationBeforeWait: 1
+  facePlayerWhenAnimating: 0
+  idleAtEnd: 0
+  idleAnimation: ArmFastShot
+  attackingAnimation: ArmFastShotDone
+  animationParticleEffect: {fileID: 0}
   animPartEffectPos: {x: 0, y: 0}
   idleAnimDelay: 0
-  attackAnimDelay: 0
+  attackAnimDelay: 3
   animEndTime: 0
-  bullet: {fileID: 6301658305505939716, guid: 11d170449ca05ef4aa36dc2f41ac6fb5, type: 3}
-  BulletsAmounts: 7
-  startRegularAngle: 30
-  endRegularAngle: 150
-  randomAngles: 0
-  RepeatAmount: 1
-  RepeatRate: 0
-  alwaysChangeTarget: 0
+  bullet: {fileID: 5819232802861071808, guid: 964e0cc88cf7f50408c36693ed1af536, type: 3}
+  BulletsAmounts: 1
+  startRegularAngle: 0
+  endRegularAngle: 0
+  randomAngles: 1
+  RepeatAmount: 5
+  RepeatRate: 0.5
+  alwaysChangeTarget: 1
   movementType: 0
   repeatAmount: 0
   mAmount: 0

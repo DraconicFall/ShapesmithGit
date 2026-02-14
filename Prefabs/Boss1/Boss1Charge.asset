@@ -43,8 +43,8 @@ MonoBehaviour:
   RepeatRate: 0
   alwaysChangeTarget: 0
   movementType: 7
-  repeatAmount: 45
-  mAmount: 0.8
+  repeatAmount: 40
+  mAmount: 1
   mRate: 0.01
   mEffect: {fileID: 0}
   rDEAtEnd: 0

@@ -9,15 +9,25 @@ public class DeathScript : MonoBehaviour
     bool calledDeathScript = false;
     public bool destroyWhenEIsPressed = false;
     public bool ifChildIsDestroyed = false;
+    public bool ifEnemyAmountIsZero = false;
     public int amountOfChild = 0;
+    bool checkedNumOfEnemies = false;
     // Start is called before the first frame update
     void Start()
     {
         amountOfChild = transform.childCount;
+        if (ifEnemyAmountIsZero)
+        {
+            StartCoroutine(checkNumOfEnemies());
+        }
     }
 
     private void Update()
     {
+        if (checkedNumOfEnemies && EnemyScript.numOfEnemies <= 0)
+        {
+            StartCoroutine(death());
+        }
         amountOfChild = transform.childCount;
         if (ifChildIsDestroyed == true && amountOfChild <= 0)
         {
@@ -27,11 +37,17 @@ public class DeathScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (calledDeathScript == false)
+        if (!ifEnemyAmountIsZero && calledDeathScript == false)
         {
             calledDeathScript = true;
             StartCoroutine(death());
         }
+    }
+
+    IEnumerator checkNumOfEnemies()
+    {
+        yield return new WaitForSeconds(0.1f);
+        checkedNumOfEnemies = true;
     }
     // Update is called once per frame
     IEnumerator death()

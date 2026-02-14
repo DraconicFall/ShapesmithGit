@@ -13,10 +13,15 @@ public class EnemyScript : MonoBehaviour
     public bool healthRampsUpFromZero = true;
 
     public GameObject deathEffect;
+    public GameObject nextBoss;
 
     public bool isInvincible = false;
     public float shieldFromAttacks; //DONT EDIT IN INSPECTOR
     public bool usesAnimator = true;
+
+    public bool CountSelfAsEnemy = false;
+    public bool invincibleUntilAllEnemiesDead = false;
+    static public int numOfEnemies = 0;
 
     public Slider healthBar;
     public Slider healthBarShrink;
@@ -56,10 +61,10 @@ public class EnemyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //if (countForEnemyCounter == true)
-        //{
-        //    GameManagerScript.enemyCounter = GameManagerScript.enemyCounter + 1;
-        //}
+        if (CountSelfAsEnemy)
+        {
+            numOfEnemies++;
+        }
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         material = spriteRenderer.material;
         //maxHealth = health;
@@ -117,6 +122,14 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (invincibleUntilAllEnemiesDead == true && numOfEnemies > 0)
+        {
+            isInvincible = true;
+        }
+        else if (invincibleUntilAllEnemiesDead && numOfEnemies <= 0)
+        {
+            isInvincible = false;
+        }
         //if (GameManagerScript.enemyCounter >= 0 && GameManagerScript.enemyCounter < 10 && haveECounterDR == true)
         //{
         //    damageResistance = 1 - 0.1f * GameManagerScript.enemyCounter;
@@ -180,7 +193,7 @@ public class EnemyScript : MonoBehaviour
     public void LoseHealth (float amountOfDamage)
     {
         float damageTaken = amountOfDamage;
-        if (isInvincible == false || damageTaken > 0)
+        if (isInvincible == false && damageTaken > 0)
         {
             //SoundFXManager.instance.PlaySoundFXClip(damageTakenFX, transform, 0.45f, 0.98f, 1.02f, true);
                 
@@ -271,6 +284,10 @@ public class EnemyScript : MonoBehaviour
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
         }
+        if (nextBoss != null)
+        {
+            Instantiate(nextBoss);
+        }
         yield return new WaitForSeconds(0f);
         //if (hasADeathAttack == true)
         //{
@@ -290,6 +307,10 @@ public class EnemyScript : MonoBehaviour
         //{
         //    GameManagerScript.enemyCounter = GameManagerScript.enemyCounter - 1;
         //}
+        if (CountSelfAsEnemy)
+        {
+            numOfEnemies--;
+        }
         Destroy(gameObject);
     }
 }

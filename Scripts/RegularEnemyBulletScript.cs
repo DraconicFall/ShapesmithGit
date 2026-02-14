@@ -198,7 +198,7 @@ public class RegularEnemyBulletScript : MonoBehaviour
                 Vector2 dir = target.position - transform.position;
                 moveDirection = dir.normalized;
                 float rotateAmount = Vector3.Cross(moveDirection, transform.right).z;
-                Debug.Log(rotateAmount);
+                //Debug.Log(rotateAmount);
                 transform.Rotate(new Vector3(0, 0, -rotateAmount * homingSpeed * Time.deltaTime));
             }
         }
@@ -231,7 +231,7 @@ public class RegularEnemyBulletScript : MonoBehaviour
 
     void UpdateTarget()
     {
-        Debug.Log("targetUpdated");
+        //Debug.Log("targetUpdated");
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(homingTag);
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfAttack: 2
   invincibleWhenAttack: 0
-  atkDelayS: 0
+  atkDelayS: 1
   atkDelayE: 0
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
@@ -24,7 +24,7 @@ MonoBehaviour:
   pitchMinFX: 0
   pitchMaxFX: 0
   usesAnimation: 1
-  playAnimationBeforeWait: 1
+  playAnimationBeforeWait: 0
   facePlayerWhenAnimating: 1
   idleAtEnd: 1
   idleAnimation: Attack2Shake
@@ -43,8 +43,8 @@ MonoBehaviour:
   RepeatRate: 0
   alwaysChangeTarget: 0
   movementType: 5
-  repeatAmount: 50
-  mAmount: 0.1
+  repeatAmount: 25
+  mAmount: 0.15
   mRate: 0.01
   mEffect: {fileID: 0}
   rDEAtEnd: 0
