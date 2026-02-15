@@ -506,8 +506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageTakenFX: {fileID: 0}
-  health: 70
-  maxHealth: 70
+  health: 65
+  maxHealth: 65
   healthRampsUpFromZero: 0
   deathEffect: {fileID: 9046759458136635527, guid: 4e1829331dd214347aae664176475c41, type: 3}
   nextBoss: {fileID: 0}
@@ -5688,7 +5688,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 935113833
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 0.2924527, b: 0.2924527, a: 1}
   m_FlipX: 0

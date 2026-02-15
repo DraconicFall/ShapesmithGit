@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfAttack: 0
   invincibleWhenAttack: 0
-  atkDelayS: 1
+  atkDelayS: 1.5
   atkDelayE: 1.5
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
@@ -32,7 +32,7 @@ MonoBehaviour:
   animationParticleEffect: {fileID: 0}
   animPartEffectPos: {x: 0, y: 0}
   idleAnimDelay: 0
-  attackAnimDelay: 4.2
+  attackAnimDelay: 4.7
   animEndTime: 0
   bullet: {fileID: 6301658305505939716, guid: 54c5f2e774489bd499a50bb2f7180d93, type: 3}
   BulletsAmounts: 1

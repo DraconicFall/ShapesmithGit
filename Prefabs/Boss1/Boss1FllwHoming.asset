@@ -15,7 +15,7 @@ MonoBehaviour:
   typeOfAttack: 2
   invincibleWhenAttack: 0
   atkDelayS: 1
-  atkDelayE: 0
+  atkDelayE: 0.5
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
   deleteSelfAfterAtk: 0

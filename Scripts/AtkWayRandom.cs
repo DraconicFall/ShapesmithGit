@@ -739,6 +739,7 @@ public class AtkWayRandom : MonoBehaviour
         }
         else if (realAttackList[attackChosen].typeOfAttack == EAttack.attackType.Combine)
         {
+            yield return new WaitForSeconds(realAttackList[attackChosen].atkDelayS);
             allAttacksFinished = 0;
             canAttack = false;
             EAttack[] combinedAttack = realAttackList[attackChosen].attacksToCombine;
@@ -750,6 +751,7 @@ public class AtkWayRandom : MonoBehaviour
             {
                 yield return new WaitForSeconds(0f);
             }
+            yield return new WaitForSeconds(realAttackList[attackChosen].atkDelayE);
             canAttack = true;
             if (removefromL == true)
             {
@@ -759,6 +761,7 @@ public class AtkWayRandom : MonoBehaviour
         }
         else if (eAttack[attackChosen].typeOfAttack == EAttack.attackType.Sequential)
         {
+            yield return new WaitForSeconds(realAttackList[attackChosen].atkDelayS);
             allAttacksFinished = 0;
             canAttack = false;
             EAttack[] combinedAttack = eAttack[attackChosen].attacksToCombine;
@@ -770,6 +773,7 @@ public class AtkWayRandom : MonoBehaviour
                     yield return new WaitForSeconds(0f);
                 }
             }
+            yield return new WaitForSeconds(realAttackList[attackChosen].atkDelayE);
             canAttack = true;
             if (removefromL == true)
             {

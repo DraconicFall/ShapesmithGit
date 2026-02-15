@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 844263a6633c64447a43c861b0b315b4, type: 3}
-  m_Name: Boss2FollowXP2
+  m_Name: B3Atk2
   m_EditorClassIdentifier: 
-  typeOfAttack: 2
+  typeOfAttack: 4
   invincibleWhenAttack: 0
   atkDelayS: 0
-  atkDelayE: 0.5
+  atkDelayE: 0.25
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
   deleteSelfAfterAtk: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   volumeFX: 0
   pitchMinFX: 0
   pitchMaxFX: 0
-  usesAnimation: 0
+  usesAnimation: 1
   playAnimationBeforeWait: 1
   facePlayerWhenAnimating: 1
   idleAtEnd: 1
@@ -42,11 +42,23 @@ MonoBehaviour:
   RepeatAmount: 1
   RepeatRate: 0
   alwaysChangeTarget: 0
-  movementType: 5
-  repeatAmount: 40
-  mAmount: 0.15
-  mRate: 0.01
+  movementType: 0
+  repeatAmount: 0
+  mAmount: 0
+  mRate: 0
   mEffect: {fileID: 0}
   rDEAtEnd: 0
-  attacksToCombine: []
+  attacksToCombine:
+  - {fileID: 11400000, guid: b62aae716d8670a4481c7a33671c5ef2, type: 2}
+  - {fileID: 11400000, guid: e92abb165f6e9f3488a72278c11b4c45, type: 2}
+  - {fileID: 11400000, guid: 2e0710ff251b8c24b98505f25a8e8c6f, type: 2}
+  - {fileID: 11400000, guid: 78a9629ac7f79d9458697494d018c6b6, type: 2}
+  - {fileID: 11400000, guid: b62aae716d8670a4481c7a33671c5ef2, type: 2}
+  - {fileID: 11400000, guid: e92abb165f6e9f3488a72278c11b4c45, type: 2}
+  - {fileID: 11400000, guid: 2e0710ff251b8c24b98505f25a8e8c6f, type: 2}
+  - {fileID: 11400000, guid: 78a9629ac7f79d9458697494d018c6b6, type: 2}
+  - {fileID: 11400000, guid: b62aae716d8670a4481c7a33671c5ef2, type: 2}
+  - {fileID: 11400000, guid: e92abb165f6e9f3488a72278c11b4c45, type: 2}
+  - {fileID: 11400000, guid: 2e0710ff251b8c24b98505f25a8e8c6f, type: 2}
+  - {fileID: 11400000, guid: f35c08ba40b46bd439bc89684e8eaa73, type: 2}
   canAtk: 1

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 844263a6633c64447a43c861b0b315b4, type: 3}
-  m_Name: Boss2FollowXP2
+  m_Name: B3Atk3
   m_EditorClassIdentifier: 
-  typeOfAttack: 2
+  typeOfAttack: 3
   invincibleWhenAttack: 0
   atkDelayS: 0
-  atkDelayE: 0.5
+  atkDelayE: 1
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
   deleteSelfAfterAtk: 0
@@ -24,9 +24,9 @@ MonoBehaviour:
   pitchMinFX: 0
   pitchMaxFX: 0
   usesAnimation: 0
-  playAnimationBeforeWait: 1
-  facePlayerWhenAnimating: 1
-  idleAtEnd: 1
+  playAnimationBeforeWait: 0
+  facePlayerWhenAnimating: 0
+  idleAtEnd: 0
   idleAnimation: 
   attackingAnimation: 
   animationParticleEffect: {fileID: 0}
@@ -42,11 +42,13 @@ MonoBehaviour:
   RepeatAmount: 1
   RepeatRate: 0
   alwaysChangeTarget: 0
-  movementType: 5
-  repeatAmount: 40
-  mAmount: 0.15
-  mRate: 0.01
+  movementType: 0
+  repeatAmount: 0
+  mAmount: 0
+  mRate: 0
   mEffect: {fileID: 0}
   rDEAtEnd: 0
-  attacksToCombine: []
+  attacksToCombine:
+  - {fileID: 11400000, guid: e637169e4c16c4744af251d292e9a37a, type: 2}
+  - {fileID: 11400000, guid: dec34c380001f7c4a94f0d608fc50613, type: 2}
   canAtk: 1

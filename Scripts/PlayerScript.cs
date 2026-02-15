@@ -18,13 +18,16 @@ public class PlayerScript : MonoBehaviour
     public float speedIncrease = 25;
     Rigidbody2D rb;
     Camera mainCam;
-    SpriteRenderer sRenderer;
+    public SpriteRenderer sRenderer;
     bool isWrappingX = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        sRenderer = GetComponent<SpriteRenderer>();
+        if (sRenderer == null)
+        {
+            sRenderer = GetComponent<SpriteRenderer>();
+        }
         mainCam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
     }

@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 844263a6633c64447a43c861b0b315b4, type: 3}
-  m_Name: Boss2FollowXP2
+  m_Name: B3HomBul
   m_EditorClassIdentifier: 
-  typeOfAttack: 2
+  typeOfAttack: 1
   invincibleWhenAttack: 0
   atkDelayS: 0
-  atkDelayE: 0.5
+  atkDelayE: 0
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
-  deleteSelfAfterAtk: 0
+  deleteSelfAfterAtk: 1
   attackFX: {fileID: 0}
   volumeFX: 0
   pitchMinFX: 0
   pitchMaxFX: 0
-  usesAnimation: 0
+  usesAnimation: 1
   playAnimationBeforeWait: 1
   facePlayerWhenAnimating: 1
   idleAtEnd: 1
@@ -34,19 +34,19 @@ MonoBehaviour:
   idleAnimDelay: 0
   attackAnimDelay: 0
   animEndTime: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 4406635597625245887, guid: febdcc3d887fcc742ac63b7fa10ca5a2, type: 3}
   BulletsAmounts: 1
   startRegularAngle: 0
   endRegularAngle: 360
   randomAngles: 0
-  RepeatAmount: 1
-  RepeatRate: 0
+  RepeatAmount: 100
+  RepeatRate: 0.5
   alwaysChangeTarget: 0
-  movementType: 5
-  repeatAmount: 40
-  mAmount: 0.15
-  mRate: 0.01
+  movementType: 0
+  repeatAmount: 0
+  mAmount: 0
+  mRate: 0
   mEffect: {fileID: 0}
   rDEAtEnd: 0
   attacksToCombine: []
-  canAtk: 1
+  canAtk: 0

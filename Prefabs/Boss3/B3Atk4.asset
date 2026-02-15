@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 844263a6633c64447a43c861b0b315b4, type: 3}
-  m_Name: Boss2FollowXP2
+  m_Name: B3Atk4
   m_EditorClassIdentifier: 
-  typeOfAttack: 2
+  typeOfAttack: 0
   invincibleWhenAttack: 0
-  atkDelayS: 0
-  atkDelayE: 0.5
+  atkDelayS: 2.8
+  atkDelayE: 1
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
   deleteSelfAfterAtk: 0
@@ -23,29 +23,29 @@ MonoBehaviour:
   volumeFX: 0
   pitchMinFX: 0
   pitchMaxFX: 0
-  usesAnimation: 0
+  usesAnimation: 1
   playAnimationBeforeWait: 1
   facePlayerWhenAnimating: 1
-  idleAtEnd: 1
-  idleAnimation: 
-  attackingAnimation: 
+  idleAtEnd: 0
+  idleAnimation: HomingStart
+  attackingAnimation: HomingEnd
   animationParticleEffect: {fileID: 0}
   animPartEffectPos: {x: 0, y: 0}
   idleAnimDelay: 0
-  attackAnimDelay: 0
+  attackAnimDelay: 2.8
   animEndTime: 0
-  bullet: {fileID: 0}
-  BulletsAmounts: 1
+  bullet: {fileID: 7513597470679321176, guid: 9eaeeae56011ab9499240360ccaa79e1, type: 3}
+  BulletsAmounts: 4
   startRegularAngle: 0
-  endRegularAngle: 360
+  endRegularAngle: 270
   randomAngles: 0
   RepeatAmount: 1
   RepeatRate: 0
-  alwaysChangeTarget: 0
-  movementType: 5
-  repeatAmount: 40
-  mAmount: 0.15
-  mRate: 0.01
+  alwaysChangeTarget: 1
+  movementType: 0
+  repeatAmount: 0
+  mAmount: 0
+  mRate: 0
   mEffect: {fileID: 0}
   rDEAtEnd: 0
   attacksToCombine: []
