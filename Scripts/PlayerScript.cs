@@ -20,6 +20,9 @@ public class PlayerScript : MonoBehaviour
     Camera mainCam;
     public SpriteRenderer sRenderer;
     bool isWrappingX = false;
+    public Animator canvasAnim;
+    bool startedGame = false;
+    public GameObject boss1Summon;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +53,8 @@ public class PlayerScript : MonoBehaviour
 
     public void killPlayer()
     {
+        canvasAnim.Play("Restart");
+
         Instantiate(playerDeathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
@@ -58,6 +63,12 @@ public class PlayerScript : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Input.anyKeyDown && !startedGame)
+        {
+            startedGame = true;
+            canvasAnim.Play("RemoveUI");
+            Instantiate(boss1Summon);
+        }
         if (Input.GetKey(KeyCode.D))
         {
             //spriteRenderer.flipX = false;

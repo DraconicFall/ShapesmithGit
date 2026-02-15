@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844263a6633c64447a43c861b0b315b4, type: 3}
+  m_Name: HamTP2
+  m_EditorClassIdentifier: 
+  typeOfAttack: 2
+  invincibleWhenAttack: 0
+  atkDelayS: 7.5
+  atkDelayE: 0
+  attackIndicator: {fileID: 0}
+  otherIndicator: {fileID: 0}
+  deleteSelfAfterAtk: 0
+  attackFX: {fileID: 0}
+  volumeFX: 0
+  pitchMinFX: 0
+  pitchMaxFX: 0
+  usesAnimation: 1
+  playAnimationBeforeWait: 1
+  facePlayerWhenAnimating: 0
+  idleAtEnd: 0
+  idleAnimation: HammerGoUp
+  attackingAnimation: HammerGoUp
+  animationParticleEffect: {fileID: 0}
+  animPartEffectPos: {x: 0, y: 0}
+  idleAnimDelay: 7.5
+  attackAnimDelay: 0
+  animEndTime: 0
+  bullet: {fileID: 0}
+  BulletsAmounts: 1
+  startRegularAngle: 0
+  endRegularAngle: 360
+  randomAngles: 0
+  RepeatAmount: 1
+  RepeatRate: 0
+  alwaysChangeTarget: 0
+  movementType: 6
+  repeatAmount: 0
+  mAmount: 2.62
+  mRate: 0
+  mEffect: {fileID: 1891877239240498170, guid: 5e6a1d9d3f07e544ab269aae3a6339e1, type: 3}
+  rDEAtEnd: 0
+  attacksToCombine: []
+  canAtk: 1

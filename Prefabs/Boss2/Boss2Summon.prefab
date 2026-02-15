@@ -5489,6 +5489,7 @@ GameObject:
   - component: {fileID: 7728656638348574980}
   - component: {fileID: 2899710464432827009}
   - component: {fileID: 4469046848673541067}
+  - component: {fileID: 7964661356541053290}
   m_Layer: 7
   m_Name: Boss2Summon
   m_TagString: Enemies
@@ -5707,6 +5708,38 @@ MonoBehaviour:
   ifChildIsDestroyed: 0
   ifEnemyAmountIsZero: 0
   amountOfChild: 0
+--- !u!114 &7964661356541053290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852383897606937354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d162e10b0102249b2b3b4bdb32dbe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTakenFX: {fileID: 0}
+  health: 99999
+  maxHealth: 99999
+  healthRampsUpFromZero: 1
+  deathEffect: {fileID: 0}
+  nextBoss: {fileID: 0}
+  isInvincible: 0
+  shieldFromAttacks: 0
+  usesAnimator: 1
+  CountSelfAsEnemy: 0
+  invincibleUntilAllEnemiesDead: 0
+  healthBar: {fileID: 0}
+  healthBarShrink: {fileID: 0}
+  barShrinkDividedBy: 1
+  timeTillShrink: 1
+  timer: 0
+  tutorial: 0
+  bossName: 
+  bossHealthNameText: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &2911003363218839871
 GameObject:
   m_ObjectHideFlags: 0
@@ -10717,6 +10750,7 @@ GameObject:
   - component: {fileID: 7337981911798928898}
   - component: {fileID: 2960058909219604655}
   - component: {fileID: 6819299944513465531}
+  - component: {fileID: 2867333931629143616}
   m_Layer: 7
   m_Name: Hand1
   m_TagString: Enemies
@@ -10868,6 +10902,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2867333931629143616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4181345316856319207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d162e10b0102249b2b3b4bdb32dbe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTakenFX: {fileID: 0}
+  health: 99999
+  maxHealth: 99999
+  healthRampsUpFromZero: 1
+  deathEffect: {fileID: 0}
+  nextBoss: {fileID: 0}
+  isInvincible: 0
+  shieldFromAttacks: 0
+  usesAnimator: 1
+  CountSelfAsEnemy: 0
+  invincibleUntilAllEnemiesDead: 0
+  healthBar: {fileID: 0}
+  healthBarShrink: {fileID: 0}
+  barShrinkDividedBy: 1
+  timeTillShrink: 1
+  timer: 0
+  tutorial: 0
+  bossName: 
+  bossHealthNameText: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &4707043125694370381
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,6 +11226,7 @@ GameObject:
   - component: {fileID: 6559771839077218569}
   - component: {fileID: 5236047873850523109}
   - component: {fileID: 3978200204788091228}
+  - component: {fileID: 8809836892462331464}
   m_Layer: 7
   m_Name: Hand2
   m_TagString: Enemies
@@ -11311,6 +11378,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8809836892462331464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746309220073996738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d162e10b0102249b2b3b4bdb32dbe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTakenFX: {fileID: 0}
+  health: 99999
+  maxHealth: 99999
+  healthRampsUpFromZero: 1
+  deathEffect: {fileID: 0}
+  nextBoss: {fileID: 0}
+  isInvincible: 0
+  shieldFromAttacks: 0
+  usesAnimator: 1
+  CountSelfAsEnemy: 0
+  invincibleUntilAllEnemiesDead: 0
+  healthBar: {fileID: 0}
+  healthBarShrink: {fileID: 0}
+  barShrinkDividedBy: 1
+  timeTillShrink: 1
+  timer: 0
+  tutorial: 0
+  bossName: 
+  bossHealthNameText: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &5864541556562572618
 GameObject:
   m_ObjectHideFlags: 0

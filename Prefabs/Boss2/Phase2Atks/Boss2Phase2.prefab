@@ -510,7 +510,7 @@ MonoBehaviour:
   maxHealth: 65
   healthRampsUpFromZero: 0
   deathEffect: {fileID: 9046759458136635527, guid: 4e1829331dd214347aae664176475c41, type: 3}
-  nextBoss: {fileID: 0}
+  nextBoss: {fileID: 882549485622555426, guid: dd99d8cad10bf7d47b59a286467b724a, type: 3}
   isInvincible: 0
   shieldFromAttacks: 0
   usesAnimator: 1

@@ -4927,7 +4927,7 @@ MonoBehaviour:
   doDAttackWBOrP: 0
   deathEffect: {fileID: 3632618136633118546, guid: 88ab161b286dec546972da99b5a5a7a8, type: 3}
   diesOut: 1
-  dieOutTime: 5
+  dieOutTime: 4.5
   colRadius: 1
   damageCooldown: 0
   expanderSize: {x: 0, y: 0}
