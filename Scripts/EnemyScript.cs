@@ -40,6 +40,8 @@ public class EnemyScript : MonoBehaviour
     bool hasStartedDeath = false;
 
     [Header("Other")]
+    public bool isTheShapesmith = false;
+    public static bool playerWon = false;
     public SpriteRenderer spriteRenderer;
     Material material;
     int numOfDFlashesActive = 0;
@@ -287,6 +289,13 @@ public class EnemyScript : MonoBehaviour
         if (nextBoss != null)
         {
             Instantiate(nextBoss);
+        }
+        if (isTheShapesmith)
+        {
+            yield return new WaitForSeconds(2.25f);
+            GameObject canvas = GameObject.Find("UI");
+            Animator canvasAnim = canvas.GetComponent<Animator>();
+            canvasAnim.Play("PlayerWin");
         }
         yield return new WaitForSeconds(0f);
         //if (hasADeathAttack == true)

@@ -393,8 +393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageTakenFX: {fileID: 0}
-  health: 65
-  maxHealth: 65
+  health: 75
+  maxHealth: 75
   healthRampsUpFromZero: 0
   deathEffect: {fileID: 9046759458136635527, guid: 4e1829331dd214347aae664176475c41, type: 3}
   nextBoss: {fileID: 1222092697002769331, guid: 0582165f841032041b9e6083fc8a5131, type: 3}
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eAttack:
-  - {fileID: 11400000, guid: 72b2086e25228784ab0d40702c8259aa, type: 2}
+  - {fileID: 11400000, guid: 4d637ff1130f3504ba9671d9e6b816ef, type: 2}
   - {fileID: 11400000, guid: 1d56c462eaf523848812c0b0708a25eb, type: 2}
   - {fileID: 11400000, guid: 94d2ef2cd66a3a5458e14c6c08e6bc30, type: 2}
   attackRateMin: 1

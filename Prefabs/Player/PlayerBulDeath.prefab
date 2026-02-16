@@ -4901,8 +4901,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b56e93020e48dea489da391abc073cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.3
+  time: 0.2
   deathEffect: {fileID: 0}
   destroyWhenEIsPressed: 0
   ifChildIsDestroyed: 0
+  ifEnemyAmountIsZero: 0
   amountOfChild: 0

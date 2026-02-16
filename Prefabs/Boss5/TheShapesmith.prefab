@@ -1560,8 +1560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageTakenFX: {fileID: 0}
-  health: 65
-  maxHealth: 65
+  health: 80
+  maxHealth: 80
   healthRampsUpFromZero: 0
   deathEffect: {fileID: 9046759458136635527, guid: 4e1829331dd214347aae664176475c41, type: 3}
   nextBoss: {fileID: 0}

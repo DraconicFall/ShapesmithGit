@@ -913,8 +913,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageTakenFX: {fileID: 0}
-  health: 125
-  maxHealth: 125
+  health: 120
+  maxHealth: 120
   healthRampsUpFromZero: 0
   deathEffect: {fileID: 9046759458136635527, guid: 4e1829331dd214347aae664176475c41, type: 3}
   nextBoss: {fileID: 0}
@@ -931,6 +931,7 @@ MonoBehaviour:
   tutorial: 0
   bossName: 
   bossHealthNameText: {fileID: 0}
+  isTheShapesmith: 1
   spriteRenderer: {fileID: 0}
 --- !u!114 &6177024330476940003
 MonoBehaviour:

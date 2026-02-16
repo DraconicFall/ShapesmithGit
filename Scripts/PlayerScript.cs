@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public GameObject playerDeathEffect;
+    public GameObject playerWarpEffect;
     public Vector2 movement;
     Vector2 OldMovement;
     private float horizontalRight = 0, horizontalLeft = 0, verticalUp = 0, verticalDown = 0;
@@ -53,17 +54,20 @@ public class PlayerScript : MonoBehaviour
 
     public void killPlayer()
     {
-        canvasAnim.Play("Restart");
+        if (!EnemyScript.playerWon)
+        {
+            canvasAnim.Play("Restart");
 
-        Instantiate(playerDeathEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+            Instantiate(playerDeathEffect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
 
 
 
     void FixedUpdate()
     {
-        if (Input.anyKeyDown && !startedGame)
+        if (!startedGame && Input.anyKey)
         {
             startedGame = true;
             canvasAnim.Play("RemoveUI");
@@ -153,16 +157,23 @@ public class PlayerScript : MonoBehaviour
         }
         var viewportPosition = mainCam.WorldToViewportPoint(transform.position);
         var newPosition = transform.position;
-        if (!isWrappingX && (viewportPosition.x > 1 || viewportPosition.x < 0))
+        if (/*!isWrappingX && */(viewportPosition.x > 1 || viewportPosition.x < 0))
         {
-            newPosition.x = -newPosition.x;
+            float offset = 0.125f;
+            if (viewportPosition.x < 0)
+            {
+                offset = -offset;
+            }
+            newPosition.x = -(newPosition.x) + offset;
+            Instantiate(playerWarpEffect, transform.position, Quaternion.identity);
             isWrappingX = true;
+            transform.position = newPosition;
+            Instantiate(playerWarpEffect, transform.position, Quaternion.identity);
         }
         //if (!isWrappingY && (viewportPosition.y > 1 || viewportPosition.y < 0))
         //{
         //    newPosition.y = -newPosition.y;
         //    isWrappingY = true;
         //}
-        transform.position = newPosition;
     }
 }

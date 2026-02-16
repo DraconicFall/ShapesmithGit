@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 844263a6633c64447a43c861b0b315b4, type: 3}
-  m_Name: HamA1C
+  m_Name: B4Atk2P2
   m_EditorClassIdentifier: 
-  typeOfAttack: 0
+  typeOfAttack: 3
   invincibleWhenAttack: 0
-  atkDelayS: 1
-  atkDelayE: 2
+  atkDelayS: 0
+  atkDelayE: 0
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
   deleteSelfAfterAtk: 0
@@ -26,21 +26,21 @@ MonoBehaviour:
   usesAnimation: 1
   playAnimationBeforeWait: 1
   facePlayerWhenAnimating: 1
-  idleAtEnd: 0
+  idleAtEnd: 1
   idleAnimation: 
   attackingAnimation: 
   animationParticleEffect: {fileID: 0}
   animPartEffectPos: {x: 0, y: 0}
   idleAnimDelay: 0
-  attackAnimDelay: 2.8
+  attackAnimDelay: 0
   animEndTime: 0
-  bullet: {fileID: 3186886663287407703, guid: 30bbbbaf1e823cf4981b50609858f241, type: 3}
-  BulletsAmounts: 14
+  bullet: {fileID: 0}
+  BulletsAmounts: 1
   startRegularAngle: 0
   endRegularAngle: 360
   randomAngles: 0
-  RepeatAmount: 5
-  RepeatRate: 1
+  RepeatAmount: 1
+  RepeatRate: 0
   alwaysChangeTarget: 0
   movementType: 0
   repeatAmount: 0
@@ -48,5 +48,8 @@ MonoBehaviour:
   mRate: 0
   mEffect: {fileID: 0}
   rDEAtEnd: 0
-  attacksToCombine: []
-  canAtk: 1
+  attacksToCombine:
+  - {fileID: 11400000, guid: 7025ebda45b97f44cb350cca53c9c8f2, type: 2}
+  - {fileID: 11400000, guid: 094b2204d43a0b041b4ca030f7ff80be, type: 2}
+  - {fileID: 11400000, guid: d1c157b9bb947674f83e817c687864df, type: 2}
+  canAtk: 0

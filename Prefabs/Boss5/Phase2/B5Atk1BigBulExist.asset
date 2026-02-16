@@ -39,7 +39,7 @@ MonoBehaviour:
   startRegularAngle: 0
   endRegularAngle: 360
   randomAngles: 0
-  RepeatAmount: 7
+  RepeatAmount: 6
   RepeatRate: 0.8
   alwaysChangeTarget: 1
   movementType: 0

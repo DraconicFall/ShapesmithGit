@@ -35,9 +35,9 @@ MonoBehaviour:
   attackAnimDelay: 9
   animEndTime: 0
   bullet: {fileID: 967554193880907858, guid: 425b1b16e7b90d34ab6d36814a53fc06, type: 3}
-  BulletsAmounts: 7
-  startRegularAngle: -65
-  endRegularAngle: 65
+  BulletsAmounts: 3
+  startRegularAngle: -55
+  endRegularAngle: 55
   randomAngles: 0
   RepeatAmount: 1
   RepeatRate: 0

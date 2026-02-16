@@ -29,9 +29,9 @@ MonoBehaviour:
   idleAtEnd: 0
   idleAnimation: B4Atk2
   attackingAnimation: B4Atk2
-  animationParticleEffect: {fileID: 0}
+  animationParticleEffect: {fileID: 1281769295812885770, guid: 4ec75a8457db0614a90558c4506ee63a, type: 3}
   animPartEffectPos: {x: 0, y: 0}
-  idleAnimDelay: 0
+  idleAnimDelay: 0.25
   attackAnimDelay: 0
   animEndTime: 0
   bullet: {fileID: 0}
